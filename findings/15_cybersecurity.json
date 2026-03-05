@@ -1,0 +1,69 @@
+{
+  "industry": "Cybersecurity",
+  "money_flow_summary": "Organizations pay for cybersecurity to prevent losses that dwarf the cost of protection — average breach cost is $4.5M. Money flows from enterprise security budgets through MSSPs, software vendors (CrowdStrike, Palo Alto), and consultants. Solo opportunity: the SMB market (5M+ businesses with 10-500 employees) is completely underserved by enterprise tools — they're the easiest targets and have almost no automated defenses.",
+  "niches": [
+    { "name": "SMB Security Monitoring & Alerting", "market_size": 9, "automation_potential": 9, "saturation": 5, "opportunity_score": 16.20 },
+    { "name": "Phishing Simulation & Employee Training", "market_size": 8, "automation_potential": 9, "saturation": 6, "opportunity_score": 12.00 },
+    { "name": "Vulnerability Scanning & Patch Management", "market_size": 8, "automation_potential": 9, "saturation": 6, "opportunity_score": 12.00 },
+    { "name": "Compliance Automation (SOC2, HIPAA, GDPR)", "market_size": 9, "automation_potential": 9, "saturation": 6, "opportunity_score": 13.50 },
+    { "name": "Identity & Access Management Automation", "market_size": 8, "automation_potential": 8, "saturation": 7, "opportunity_score": 9.14 },
+    { "name": "Threat Intelligence Aggregation", "market_size": 7, "automation_potential": 9, "saturation": 6, "opportunity_score": 10.50 },
+    { "name": "API Security Monitoring", "market_size": 8, "automation_potential": 9, "saturation": 5, "opportunity_score": 14.40 },
+    { "name": "Bug Bounty & Security Research Automation", "market_size": 6, "automation_potential": 8, "saturation": 5, "opportunity_score": 9.60 },
+    { "name": "Data Loss Prevention for SMBs", "market_size": 7, "automation_potential": 8, "saturation": 5, "opportunity_score": 11.20 },
+    { "name": "Security Awareness Automation Platform", "market_size": 8, "automation_potential": 9, "saturation": 6, "opportunity_score": 12.00 }
+  ],
+  "top_opportunities": [
+    {
+      "title": "AI Compliance Automation for Startups (SOC 2 / HIPAA)",
+      "niche": "Compliance Automation (SOC2, HIPAA, GDPR)",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Build an AI agent that guides startups through SOC 2 Type II or HIPAA compliance: auto-collects evidence from AWS/GCP/GitHub/Slack, generates required policies (60+ documents), monitors for control failures, and prepares the auditor package. Charge $299-$999/mo. Vanta charges $1,500-$5,000/mo for similar features. Startups pay $20k-$80k to consultants for first SOC 2 — your tool does it for $5k/yr.",
+      "revenue_potential": "$8,000-$60,000/mo",
+      "setup_cost": "$1,000-$3,000",
+      "setup_time": "6-10 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 8,
+      "risk_adjusted_score": 6.45,
+      "timeframe": "24/7 passive",
+      "moat": "Audit history data creates irreplaceable audit trail; cloud integrations create high switching cost",
+      "first_step": "Map all 64 SOC 2 controls to automatable evidence sources; build AWS CloudTrail + GitHub integration; find 3 seed-stage startups needing their first SOC 2",
+      "ai_agent_angle": "AI reads your cloud configs and automatically generates SOC 2 control evidence — no more manually exporting logs and formatting for auditors"
+    },
+    {
+      "title": "AI Phishing Simulation & Micro-Training Platform",
+      "niche": "Phishing Simulation & Employee Training",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Send AI-generated phishing simulation emails to employees (personalized using LinkedIn/company website data), track who clicks, and immediately deliver a 2-minute micro-training module. Generate monthly risk reports per department. Charge $3-$8/employee/mo. A 100-person company = $300-$800/mo. KnowBe4 dominates enterprise; the sub-500-employee market is wide open.",
+      "revenue_potential": "$5,000-$40,000/mo",
+      "setup_cost": "$500-$2,000",
+      "setup_time": "4-6 weeks",
+      "profitability_score": 8,
+      "risk_score": 3,
+      "effort_score": 6,
+      "risk_adjusted_score": 6.85,
+      "timeframe": "scheduled",
+      "moat": "Employee click history database enables increasingly sophisticated tests over time",
+      "first_step": "Build email simulation platform with click tracking pixel; create 20 phishing email templates; generate sample risk report; demo to 1 SMB with IT manager",
+      "ai_agent_angle": "AI creates hyper-personalized phishing emails using OSINT — referencing the employee's real projects, manager name, and current company news — far more effective than generic templates"
+    },
+    {
+      "title": "SMB Continuous Security Monitoring (Affordable MDR)",
+      "niche": "SMB Security Monitoring & Alerting",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Build a lightweight security monitoring agent that installs on SMB endpoints and cloud accounts (AWS, Google Workspace, Microsoft 365). Detects anomalous logins, unusual data transfers, and malware signatures. Sends plain-English Slack/email alerts with remediation steps. Charge $99-$499/mo for 1-50 users. Replaces a $2k-$5k/mo MSSP for businesses that can't justify the cost.",
+      "revenue_potential": "$5,000-$30,000/mo",
+      "setup_cost": "$1,000-$5,000",
+      "setup_time": "6-12 weeks",
+      "profitability_score": 8,
+      "risk_score": 5,
+      "effort_score": 8,
+      "risk_adjusted_score": 5.25,
+      "timeframe": "24/7 passive",
+      "moat": "Behavioral baseline per organization creates detection accuracy advantage; installed agent creates high switching cost",
+      "first_step": "Build Google Workspace API anomaly detector (impossible login locations, bulk download events); create Slack alert integration; pilot with 5 friendly SMBs",
+      "ai_agent_angle": "AI establishes behavioral baselines for each user and organization, detecting 'abnormal for this specific person' rather than relying on static rules that sophisticated attackers bypass"
+    }
+  ]
+}

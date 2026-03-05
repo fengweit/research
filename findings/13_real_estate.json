@@ -1,0 +1,69 @@
+{
+  "industry": "Real Estate & PropTech",
+  "money_flow_summary": "Money flows from buyers, renters, and owners through agents (2.5-3% commission), property managers (8-12% of rent), title companies, and mortgage lenders. The US real estate market is $45T in assets with massive friction — AI is now compressing 30-day transaction cycles into days and replacing tasks that required licensed professionals.",
+  "niches": [
+    { "name": "Real Estate Listing Description & Marketing Automation", "market_size": 8, "automation_potential": 10, "saturation": 6, "opportunity_score": 13.33 },
+    { "name": "Short-Term Rental Management Automation", "market_size": 8, "automation_potential": 9, "saturation": 7, "opportunity_score": 10.29 },
+    { "name": "Property Management Communication Automation", "market_size": 8, "automation_potential": 9, "saturation": 5, "opportunity_score": 14.40 },
+    { "name": "Real Estate Lead Generation & CRM", "market_size": 9, "automation_potential": 8, "saturation": 7, "opportunity_score": 10.29 },
+    { "name": "Investment Property Analysis Automation", "market_size": 7, "automation_potential": 9, "saturation": 5, "opportunity_score": 12.60 },
+    { "name": "Mortgage & Lending Process Automation", "market_size": 9, "automation_potential": 8, "saturation": 7, "opportunity_score": 10.29 },
+    { "name": "Commercial Real Estate Data & Research", "market_size": 7, "automation_potential": 8, "saturation": 5, "opportunity_score": 11.20 },
+    { "name": "Real Estate Document & Contract Automation", "market_size": 8, "automation_potential": 9, "saturation": 5, "opportunity_score": 14.40 },
+    { "name": "Tenant Screening & Risk Assessment", "market_size": 7, "automation_potential": 9, "saturation": 7, "opportunity_score": 9.00 },
+    { "name": "Proptech Data Aggregation & Comp Analysis", "market_size": 7, "automation_potential": 9, "saturation": 6, "opportunity_score": 10.50 }
+  ],
+  "top_opportunities": [
+    {
+      "title": "AI Property Management Communication Agent",
+      "niche": "Property Management Communication Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Build an AI agent for landlords and property managers that handles 90% of tenant communication: maintenance requests (triages, dispatches vendors, follows up), lease renewals (drafts notices, answers questions), rent reminders, and move-in/out coordination. Charge $29-$99/door/mo. Small landlords (5-50 units) are the most underserved segment — can't afford a full PM company but drown in communication.",
+      "revenue_potential": "$5,000-$40,000/mo",
+      "setup_cost": "$500-$2,000",
+      "setup_time": "3-5 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 7.25,
+      "timeframe": "24/7 passive",
+      "moat": "Property and tenant data creates stickiness; vendor network integration deepens value over time",
+      "first_step": "Build SMS/email AI responder using Twilio + Claude; create maintenance request triage workflow; offer free 90-day trial to 10 landlords via BiggerPockets forum",
+      "ai_agent_angle": "AI handles every tenant message 24/7 — responding to the 11pm 'my heat isn't working' message, creating a work order, and texting the HVAC contractor, without the landlord lifting a finger"
+    },
+    {
+      "title": "Investment Property Deal Analyzer (Automated Underwriting)",
+      "niche": "Investment Property Analysis Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Scrape Zillow, Redfin, and county tax records to pull property data. When a user enters an address or MLS listing, AI automatically calculates NOI, cap rate, cash-on-cash return, GRM, rent comps, and 5-year pro forma. Integrate with Rentometer for rent data. Charge $49-$149/mo to real estate investors. Replaces the 3-hour spreadsheet analysis per deal.",
+      "revenue_potential": "$3,000-$20,000/mo",
+      "setup_cost": "$300-$1,000",
+      "setup_time": "2-4 weeks",
+      "profitability_score": 7,
+      "risk_score": 3,
+      "effort_score": 5,
+      "risk_adjusted_score": 5.80,
+      "timeframe": "24/7 passive",
+      "moat": "Historical deal analysis creates proprietary market benchmarks; saved portfolio creates switching cost",
+      "first_step": "Build Zillow scraper + rent comp analysis; create deal analysis PDF report template; post demo analysis in r/realestateinvesting",
+      "ai_agent_angle": "AI writes the investment narrative ('This property is priced 12% above comparable cap rates in this zip code — here are 3 comparable sales') that would take an analyst 2 hours to write"
+    },
+    {
+      "title": "Real Estate Listing Copy & Marketing Automation for Agents",
+      "niche": "Real Estate Listing Description & Marketing Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Build a tool that takes MLS data + photos and generates: (1) compelling listing description, (2) social media posts for Instagram/Facebook, (3) email campaign for buyer agent database, (4) property website with AI-generated copy. Charge real estate agents $49-$199/listing or $99/mo subscription. 1.5M+ active real estate agents in the US each list multiple properties per year.",
+      "revenue_potential": "$5,000-$30,000/mo",
+      "setup_cost": "$300-$1,000",
+      "setup_time": "2-3 weeks",
+      "profitability_score": 7,
+      "risk_score": 3,
+      "effort_score": 4,
+      "risk_adjusted_score": 6.10,
+      "timeframe": "event-driven",
+      "moat": "Agent's past listing style trains personalized writing voice; MLS integration creates workflow embedding",
+      "first_step": "Build MLS data input form + Claude listing description generator; offer first 3 listings free; post in real estate Facebook groups and ActiveRain",
+      "ai_agent_angle": "AI generates emotionally resonant listing copy that highlights the right features for the neighborhood's buyer demographic — what top-producing agents' assistants spend 2 hours on per listing"
+    }
+  ]
+}

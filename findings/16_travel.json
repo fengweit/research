@@ -1,0 +1,69 @@
+{
+  "industry": "Travel & Hospitality",
+  "money_flow_summary": "Money flows from travelers through OTAs (Expedia, Booking.com take 15-25% commissions), airlines, hotels, and experiences. The AI opportunity: travel involves enormous research and coordination overhead that AI compresses — from trip planning to booking optimization to customer service — enabling solo operators to build highly personalized travel tools at scale.",
+  "niches": [
+    { "name": "AI Travel Planning & Itinerary Generation", "market_size": 8, "automation_potential": 9, "saturation": 7, "opportunity_score": 10.29 },
+    { "name": "Hotel/Flight Price Monitoring & Alerting", "market_size": 8, "automation_potential": 9, "saturation": 7, "opportunity_score": 10.29 },
+    { "name": "Points & Miles Optimization", "market_size": 7, "automation_potential": 8, "saturation": 6, "opportunity_score": 9.33 },
+    { "name": "Boutique Hotel & Airbnb Management Tools", "market_size": 7, "automation_potential": 9, "saturation": 6, "opportunity_score": 10.50 },
+    { "name": "Corporate Travel Management Automation", "market_size": 8, "automation_potential": 8, "saturation": 6, "opportunity_score": 10.67 },
+    { "name": "Travel Content & Review Aggregation", "market_size": 6, "automation_potential": 9, "saturation": 8, "opportunity_score": 6.75 },
+    { "name": "Visa & Entry Requirement Automation", "market_size": 6, "automation_potential": 8, "saturation": 4, "opportunity_score": 12.00 },
+    { "name": "Restaurant & Experience Discovery", "market_size": 7, "automation_potential": 8, "saturation": 8, "opportunity_score": 7.00 },
+    { "name": "Group Travel Coordination Tools", "market_size": 6, "automation_potential": 8, "saturation": 4, "opportunity_score": 12.00 },
+    { "name": "Travel Insurance Comparison & Automation", "market_size": 7, "automation_potential": 8, "saturation": 6, "opportunity_score": 9.33 }
+  ],
+  "top_opportunities": [
+    {
+      "title": "AI Points & Miles Optimizer (Maximize Award Travel)",
+      "niche": "Points & Miles Optimization",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Build an AI agent that connects to a user's credit card and airline/hotel accounts, tracks all points balances, identifies expiring points, and recommends the optimal redemption strategy for their travel goals. Includes availability alerts for award seats. Charge $9-$29/mo. 100M+ Americans have loyalty points they underutilize. The Points Guy monetizes via referrals; your tool monetizes via subscription.",
+      "revenue_potential": "$5,000-$30,000/mo",
+      "setup_cost": "$300-$1,000",
+      "setup_time": "2-4 weeks",
+      "profitability_score": 7,
+      "risk_score": 3,
+      "effort_score": 5,
+      "risk_adjusted_score": 5.80,
+      "timeframe": "scheduled",
+      "moat": "Points portfolio history creates personalized recommendations; booking alerts create daily habit",
+      "first_step": "Build loyalty account scrapers (Plaid doesn't cover points — use CSV import); create points valuation model; launch on Product Hunt + r/churning",
+      "ai_agent_angle": "AI understands complex transfer partner chains ('Transfer Chase → Hyatt → book IHG properties through Hyatt cross-redemption') that require expert knowledge most people don't have"
+    },
+    {
+      "title": "Automated Corporate Travel Policy & Expense Compliance",
+      "niche": "Corporate Travel Management Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Build an AI agent that integrates with corporate booking tools (Concur, TripActions) and automatically flags out-of-policy bookings before they happen, generates pre-trip approval workflows, and produces exception reports. Charge $5-$15/employee/mo to mid-market companies (100-2000 employees). Saves finance teams 20+ hours/month reviewing expense reports.",
+      "revenue_potential": "$5,000-$30,000/mo",
+      "setup_cost": "$500-$2,000",
+      "setup_time": "3-5 weeks",
+      "profitability_score": 8,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 6.40,
+      "timeframe": "event-driven",
+      "moat": "Policy configuration creates employer lock-in; employee behavior data creates violation pattern database",
+      "first_step": "Build Concur API integration + policy rule engine; create violation report demo; post in CFO/finance LinkedIn communities",
+      "ai_agent_angle": "AI reads unstructured travel policy documents and turns them into enforceable rules — a task that currently requires manual configuration by travel managers"
+    },
+    {
+      "title": "Visa & Entry Requirements Intelligence Service",
+      "niche": "Visa & Entry Requirement Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Monitor government embassy and travel advisory websites across 195 countries for visa requirement changes. When requirements change (new e-visa available, processing time changes, new COVID rules), alert subscribers instantly. Sell B2B to travel agencies, corporate travel managers, and immigration consultants at $99-$499/mo. IATA Travel Centre charges airlines thousands/month for similar data.",
+      "revenue_potential": "$3,000-$20,000/mo",
+      "setup_cost": "$200-$800",
+      "setup_time": "2-3 weeks",
+      "profitability_score": 7,
+      "risk_score": 3,
+      "effort_score": 5,
+      "risk_adjusted_score": 5.80,
+      "timeframe": "scheduled",
+      "moat": "Historical change tracking creates unique audit trail; parsing 195 government websites is a technical barrier",
+      "first_step": "Build scraper monitoring 20 most-visited country embassy sites; set up change detection; create free API for 5 beta travel agencies",
+      "ai_agent_angle": "AI parses inconsistently formatted government documents across 195 countries and extracts structured visa requirement data — a task no human team can do cost-effectively"
+    }
+  ]
+}
