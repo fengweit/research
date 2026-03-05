@@ -1,0 +1,72 @@
+{
+  "industry": "Logistics & Supply Chain",
+  "money_flow_summary": "Money flows from shippers through freight brokers, carriers, and last-mile operators. AI disrupts coordination and visibility layers — predicting delays, optimizing routes, automating documentation.",
+  "opportunities": [
+    {
+      "title": "SMB Demand Forecasting & Reorder Automation",
+      "niche": "Demand Forecasting for SMB Inventory",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Connects to Shopify/WooCommerce + suppliers. Analyzes 12–24 months sales velocity by SKU, seasonal patterns, lead times. Auto-generates purchase orders when stock hits reorder point. Charge $149–$499/mo. Stockouts cost SMBs 4–8% of annual revenue.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$300–$1,500",
+      "setup_time": "3–5 weeks",
+      "profitability_score": 8,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 6.40,
+      "tier": "B",
+      "timeframe": "scheduled",
+      "moat": "Historical sales + inventory data creates proprietary demand model per customer",
+      "first_step": "Build Shopify inventory data connector; implement Prophet forecasting; create demo showing stockout prevention",
+      "ai_agent_angle": "AI incorporates external signals (weather, social trends, promotional calendars) that simple velocity-based rules miss",
+      "competitors": [
+        { "name": "Inventory Planner", "weakness": "$99–$499/mo but manual reorder triggers; no AI signals integration; basic forecasting" },
+        { "name": "Cin7", "weakness": "Full inventory management system; expensive; complex; not focused on demand prediction" },
+        { "name": "Brightpearl", "weakness": "Mid-market enterprise ($1k+/mo); over-complex for small Shopify stores" }
+      ],
+      "gap": "Inventory Planner shows forecasts but requires manual decisions. An AI that automatically places purchase orders when predictions hit reorder thresholds — without human approval for routine restocks — is missing.",
+      "poc_steps": [
+        "Export a Shopify store's sales history for 12 months",
+        "Run Facebook Prophet forecasting on top 20 SKUs",
+        "Show: 'SKU A will stock out in 12 days at current velocity — reorder 200 units now'",
+        "Charge $149/mo for the automated alert + PO generation"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 7
+    },
+    {
+      "title": "Import/Export Compliance Document Automation",
+      "niche": "Cross-Border Trade Documentation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "AI handles paperwork nightmare of international trade: auto-generates commercial invoices, packing lists, certificates of origin, customs declarations from order data. Cross-references HTS codes, tariff schedules. Charge $199–$999/mo. Customs brokers charge $150–$500 per shipment.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "4–6 weeks",
+      "profitability_score": 8,
+      "risk_score": 5,
+      "effort_score": 7,
+      "risk_adjusted_score": 5.70,
+      "tier": "C",
+      "timeframe": "event-driven",
+      "moat": "HTS classification database + country-specific rule library creates proprietary accuracy",
+      "first_step": "Build HTS tariff schedule parser + commercial invoice generator; test with 5 Shopify sellers importing from China",
+      "ai_agent_angle": "AI classifies products into HTS codes and generates compliant customs documentation",
+      "competitors": [
+        { "name": "Flexport", "weakness": "Full freight forwarder; expensive; not DIY; requires account management" },
+        { "name": "Zonos (duties/taxes)", "weakness": "Duties calculation only; no document generation; checkout-focused" },
+        { "name": "Manual customs brokers", "weakness": "$150–$500/shipment; slow; human capacity constraints" }
+      ],
+      "gap": "No affordable tool auto-generates all export/import documents from order data AND classifies HTS codes. Every SMB importer either uses a $500/shipment broker or does it manually with errors.",
+      "poc_steps": [
+        "Get HTS code database (free from census.gov)",
+        "Build product description → HTS code classifier with Claude",
+        "Generate sample commercial invoice template",
+        "Offer to do 5 free shipment document sets for an Amazon importer"
+      ],
+      "poc_difficulty": 4,
+      "time_to_first_revenue": "3 weeks",
+      "quick_profit_score": 5
+    }
+  ]
+}

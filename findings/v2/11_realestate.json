@@ -1,0 +1,72 @@
+{
+  "industry": "Real Estate & PropTech",
+  "money_flow_summary": "Money flows from buyers/renters through agents (2.5–3% commission), property managers (8–12% of rent), title companies, and mortgage lenders. AI compresses 30-day transaction cycles and automates tasks that required licensed professionals.",
+  "opportunities": [
+    {
+      "title": "AI Property Management Communication Agent",
+      "niche": "Property Management Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "AI agent handles 90% of tenant communication: maintenance requests, lease renewals, rent reminders, move-in/out coordination. Charge $29–$99/door/mo. Small landlords (5–50 units) are the most underserved.",
+      "revenue_potential": "$5,000–$40,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "3–5 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 7.25,
+      "tier": "A",
+      "timeframe": "24/7 passive",
+      "moat": "Property and tenant data creates stickiness; vendor network integration deepens value",
+      "first_step": "Build SMS/email AI responder using Twilio + Claude; create maintenance request triage; offer free 90-day trial to 10 landlords via BiggerPockets",
+      "ai_agent_angle": "AI handles every tenant message 24/7 — responding to 11pm 'heat not working' messages and creating work orders automatically",
+      "competitors": [
+        { "name": "Buildium", "weakness": "Property management platform, not AI communication; $55–$460+/mo; still requires human to respond to tenant messages" },
+        { "name": "AppFolio", "weakness": "$1.40/unit/mo minimum; AI-lite (just canned responses); no true autonomous communication" },
+        { "name": "Hemlane", "weakness": "Human-hybrid model; $2–$28/unit/mo; real humans handle responses, not automated" }
+      ],
+      "gap": "Every property management tool has a tenant portal but requires a human to respond. An AI that autonomously handles maintenance triaging, vendor coordination, and tenant communication without human intervention is absent.",
+      "poc_steps": [
+        "Create a Twilio number ($1/mo) with a Claude-powered auto-responder",
+        "Forward a landlord friend's rental inquiries to your number for 1 week",
+        "Show them: 'AI responded to 34 tenant messages, created 6 work orders, scheduled 2 viewings — automatically'",
+        "Charge $29/unit/mo"
+      ],
+      "poc_difficulty": 2,
+      "time_to_first_revenue": "1 week",
+      "quick_profit_score": 9
+    },
+    {
+      "title": "Real Estate Listing Copy & Marketing Automation",
+      "niche": "Listing Description & Marketing",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Takes MLS data + photos, generates: compelling listing description, social media posts for Instagram/Facebook, email campaign for buyer database, property website. Charge agents $49–$199/listing or $99/mo subscription.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$300–$1,000",
+      "setup_time": "2–3 weeks",
+      "profitability_score": 7,
+      "risk_score": 3,
+      "effort_score": 4,
+      "risk_adjusted_score": 6.10,
+      "tier": "B",
+      "timeframe": "event-driven",
+      "moat": "Agent's past listing style trains personalized voice; MLS integration creates workflow embedding",
+      "first_step": "Build MLS data input form + Claude listing generator; offer first 3 listings free; post in real estate Facebook groups",
+      "ai_agent_angle": "AI generates emotionally resonant copy that highlights right features for neighborhood's buyer demographic",
+      "competitors": [
+        { "name": "Canva (templates)", "weakness": "Design tool only; no AI copy; no MLS integration; manual" },
+        { "name": "Zillow agent tools", "weakness": "Portal-locked; no content generation; no social media integration" },
+        { "name": "ListingAI", "weakness": "Basic description generator; no full marketing suite; no social scheduling; $29/mo for minimal features" }
+      ],
+      "gap": "ListingAI does basic descriptions but doesn't produce the full marketing package (social posts + email campaign + property website) from one MLS import. That full automation is the gap.",
+      "poc_steps": [
+        "Find any Zillow listing with photo URLs and MLS data",
+        "Prompt Claude: 'write a compelling listing description + 3 Instagram captions for this property'",
+        "Demo to 5 real estate agents — offer first 3 listings free",
+        "Charge $49/listing or $99/mo after validation"
+      ],
+      "poc_difficulty": 1,
+      "time_to_first_revenue": "2–3 days",
+      "quick_profit_score": 10
+    }
+  ]
+}

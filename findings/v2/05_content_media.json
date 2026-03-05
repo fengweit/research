@@ -1,0 +1,108 @@
+{
+  "industry": "Content & Media",
+  "money_flow_summary": "Audiences pay with attention; advertisers pay with dollars. AI collapsed content production cost 90%+ — a solo operator can produce the output of a 10-person media company.",
+  "opportunities": [
+    {
+      "title": "Content Localization SaaS (YouTube → 12 Languages)",
+      "niche": "Content Localization & Translation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Takes a YouTube video, transcribes, translates into 12 languages, generates dubbed audio in creator's voice clone, adds subtitles, uploads localized versions to 12 regional channels — automated. Charge $99–$499/mo.",
+      "revenue_potential": "$8,000–$50,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "3–5 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 7.25,
+      "tier": "A",
+      "timeframe": "scheduled",
+      "moat": "Voice clone is creator-specific; high setup investment creates retention",
+      "first_step": "Build YouTube API + Whisper + ElevenLabs voice clone pipeline; demo with 1 creator's video in 3 languages",
+      "ai_agent_angle": "AI voice cloning creates creator voice in 12 languages from 5 min of audio — impossible without $100k+ studio 18 months ago",
+      "competitors": [
+        { "name": "Rask AI", "weakness": "Basic dubbing; no YouTube auto-upload; quality issues with lip sync; $60–$290/mo; limited languages" },
+        { "name": "HeyGen", "weakness": "Avatar-focused, not creator voice cloning; manual workflow; no batch processing" },
+        { "name": "Papercup", "weakness": "Enterprise only ($10k+/yr); human-in-the-loop; not automated" }
+      ],
+      "gap": "Rask AI and similar tools do basic translation but don't auto-upload localized videos to regional YouTube channels and manage the entire multi-channel operation. The full closed-loop automation is missing.",
+      "poc_steps": [
+        "Take any YouTube video URL",
+        "Transcribe with Whisper (free, local model)",
+        "Translate to Spanish with Claude",
+        "Generate Spanish audio with ElevenLabs cloned voice (5 min of original audio needed)",
+        "Manually upload + show the creator the Spanish version"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "1 week",
+      "quick_profit_score": 8
+    },
+    {
+      "title": "Podcast Clip Automation Service",
+      "niche": "Podcast Automation & Repurposing",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Takes podcast RSS feed, downloads episodes, transcribes, identifies 5 most shareable 60–90 sec clips via LLM, generates captions, creates formatted social posts. Charge $99–$299/mo. 4M+ active podcasts.",
+      "revenue_potential": "$5,000–$40,000/mo",
+      "setup_cost": "$200–$800",
+      "setup_time": "1–3 weeks",
+      "profitability_score": 8,
+      "risk_score": 3,
+      "effort_score": 5,
+      "risk_adjusted_score": 6.80,
+      "tier": "B",
+      "timeframe": "scheduled",
+      "moat": "Podcast + social account OAuth creates stickiness; quality compounds as model learns client's style",
+      "first_step": "Build Whisper + Claude pipeline for clip identification; integrate with CapCut API for captions; launch ProductHunt",
+      "ai_agent_angle": "AI identifies highest-engagement moments in 60-min episode in 30 seconds — finding emotional resonance, not just facts",
+      "competitors": [
+        { "name": "Descript", "weakness": "$12–$24/mo but requires manual clip selection; just a video editor with transcription; no AI clip finder" },
+        { "name": "Opus Clip", "weakness": "$19–$79/mo; YouTube/video focused; basic AI selection; no social scheduling; limited to short-form" },
+        { "name": "Castmagic", "weakness": "$39–$99/mo; transcription + show notes, not clip generation with captions" }
+      ],
+      "gap": "Opus Clip does short-form video clips but not podcasts specifically. No tool finds the best podcast clips AND auto-creates captioned videos AND schedules them across platforms in one workflow.",
+      "poc_steps": [
+        "Pick any podcast episode (MP3 from RSS feed)",
+        "Transcribe with Whisper (free)",
+        "Prompt Claude: 'identify the 5 most engaging 90-second segments from this transcript that would go viral on LinkedIn'",
+        "Show the podcaster the 5 clips with timestamps",
+        "Charge $99/mo to do this every week automatically"
+      ],
+      "poc_difficulty": 1,
+      "time_to_first_revenue": "3 days",
+      "quick_profit_score": 10
+    },
+    {
+      "title": "AI-Generated Niche Data Report Business",
+      "niche": "Niche Data Journalism",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Pick a niche (SaaS, VC, real estate). Scrape pricing pages, job postings, app reviews, Reddit/HN. Use LLM to synthesize into monthly 15-page reports with charts. Sell $99–$499/mo or $2,500 per report.",
+      "revenue_potential": "$5,000–$100,000/mo",
+      "setup_cost": "$200–$1,000",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 9,
+      "risk_score": 3,
+      "effort_score": 5,
+      "risk_adjusted_score": 7.90,
+      "tier": "A",
+      "timeframe": "scheduled",
+      "moat": "Historical report database + subscriber community drives word-of-mouth; longitudinal data is unique",
+      "first_step": "Scrape SaaS pricing pages from G2/Capterra (500 companies); generate 1 test report; post as free download on LinkedIn",
+      "ai_agent_angle": "AI synthesizes 500+ data points into narrative insights — replacing a team of analysts",
+      "competitors": [
+        { "name": "Gartner / Forrester", "weakness": "$10k–$50k per report; enterprise only; slow cadence; outdated by the time published" },
+        { "name": "CB Insights", "weakness": "$25k–$50k/yr; great data but very expensive; not accessible to most buyers" },
+        { "name": "G2 Reports", "weakness": "Review-based only; no pricing/market intelligence; free but shallow" }
+      ],
+      "gap": "Startups and mid-market companies need market intelligence but can't afford Gartner. AI can now produce Gartner-quality reports at 1% of the cost. The $99–$499/mo niche report subscription doesn't exist at scale.",
+      "poc_steps": [
+        "Choose a niche you know: e.g., 'SaaS pricing benchmarks'",
+        "Manually pull pricing from 50 SaaS company websites in 2 hours",
+        "Use Claude to synthesize: 'write a 5-page report on SaaS pricing trends from this data'",
+        "Post on LinkedIn as free download and collect 100+ email signups",
+        "Charge $99/mo for monthly updates"
+      ],
+      "poc_difficulty": 1,
+      "time_to_first_revenue": "1 week",
+      "quick_profit_score": 10
+    }
+  ]
+}

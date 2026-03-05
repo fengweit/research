@@ -1,0 +1,72 @@
+{
+  "industry": "Travel & Hospitality",
+  "money_flow_summary": "Money flows from travelers through OTAs (15–25% commissions), airlines, hotels, and experiences. AI compresses research and coordination overhead enabling personalized travel tools at scale.",
+  "opportunities": [
+    {
+      "title": "AI Points & Miles Optimizer",
+      "niche": "Loyalty Points Optimization",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Connects to credit card + airline/hotel loyalty accounts, tracks all points, identifies expiring points, recommends optimal redemption strategy, sends availability alerts for award seats. Charge $9–$29/mo. 100M+ Americans underutilize loyalty points.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$300–$1,000",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 7,
+      "risk_score": 3,
+      "effort_score": 5,
+      "risk_adjusted_score": 5.80,
+      "tier": "C",
+      "timeframe": "scheduled",
+      "moat": "Points portfolio history creates personalized recommendations; booking alerts create daily habit",
+      "first_step": "Build loyalty account scrapers (CSV import); create points valuation model; launch on Product Hunt + r/churning",
+      "ai_agent_angle": "AI understands complex transfer partner chains most people don't know about",
+      "competitors": [
+        { "name": "AwardWallet", "weakness": "Tracks points but gives zero redemption advice; no AI; $30/yr premium; just a database" },
+        { "name": "The Points Guy", "weakness": "Content/media, not a tool; monetizes via credit card referrals, not subscriptions; no personalized alerts" },
+        { "name": "PointsYeah", "weakness": "Award search tool; limited to flight awards only; no hotel or transfer partner optimization" }
+      ],
+      "gap": "AwardWallet tracks balances but doesn't tell you what to DO with them. A personalized 'you have 180k Chase points — here's the best redemption based on your upcoming Hawaii trip' product doesn't exist.",
+      "poc_steps": [
+        "Build CSV importer for American Express, Chase, Citi rewards statements",
+        "Build valuation model (cents per point) for 20 loyalty programs",
+        "Generate 'your best redemption right now' recommendation with Claude",
+        "Post in r/churning, r/awardtravel — charge $9/mo for automated tracking"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 6
+    },
+    {
+      "title": "Boutique Hotel Revenue Management AI",
+      "niche": "Hospitality Revenue Optimization",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Dynamic pricing + optimization agent for boutique hotels and B&Bs: pulls competitor pricing, local event calendars, booking momentum, adjusts rates daily to maximize RevPAR. Also auto-responds to OTA messages. Charge $149–$499/mo per property.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$300–$1,500",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 8,
+      "risk_score": 4,
+      "effort_score": 5,
+      "risk_adjusted_score": 6.40,
+      "tier": "B",
+      "timeframe": "24/7 passive",
+      "moat": "Historical booking + pricing data creates optimization model that improves per property",
+      "first_step": "Register for Booking.com partner API; build pricing recommendation from competitor rates + event calendar; sign up 10 beta properties",
+      "ai_agent_angle": "AI combines weather, events, competitor prices, and booking momentum into single daily price recommendation",
+      "competitors": [
+        { "name": "PriceLabs", "weakness": "$19.99/mo but only dynamic pricing — no OTA communication, no broader revenue management" },
+        { "name": "Beyond Pricing", "weakness": "Similar to PriceLabs; pricing only; no AI communication; $10–$30/mo" },
+        { "name": "Revenue managers (human)", "weakness": "$2k–$5k/mo; not accessible to boutique hotels with 10–50 rooms" }
+      ],
+      "gap": "PriceLabs does dynamic pricing but that's only 20% of revenue management. A tool that also auto-responds to guest messages, manages OTA content, and monitors competitive set in one platform is missing for sub-50 room properties.",
+      "poc_steps": [
+        "Build a simple pricing recommendation tool using Airbnb/Booking.com competitor rate scraper",
+        "Add a local events calendar integration",
+        "Build price recommendation email that sends every Monday morning",
+        "Find 5 B&B owners via Google Maps, offer free 30-day trial"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 7
+    }
+  ]
+}

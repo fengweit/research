@@ -1,0 +1,138 @@
+{
+  "industry": "FinTech & Financial Services",
+  "money_flow_summary": "Money flows from consumers and businesses through financial intermediaries who charge fees, spreads, and interest. AI is collapsing the cost of building financial tools to near zero for solo operators.",
+  "opportunities": [
+    {
+      "title": "AI Tax Deduction Finder for Freelancers",
+      "niche": "Tax Preparation & Filing Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Connect to freelancer bank accounts via Plaid, scan 12 months of transactions with LLM, identify every deductible expense, generate a Schedule C worksheet. Target 60M+ US freelancers who overpay taxes by avg $1,200/yr.",
+      "revenue_potential": "$5,000–$50,000/mo",
+      "setup_cost": "$500–$1,500",
+      "setup_time": "3–5 weeks",
+      "profitability_score": 9,
+      "risk_score": 5,
+      "effort_score": 6,
+      "risk_adjusted_score": 7.15,
+      "tier": "A",
+      "timeframe": "scheduled",
+      "moat": "Historical transaction data creates personalized baseline; tax season drives organic word-of-mouth",
+      "first_step": "Build Plaid Link + IRS Pub 535 deduction rules RAG; launch to Twitter freelancer communities in October",
+      "ai_agent_angle": "LLM reads ambiguous transaction descriptions and reasons about deductibility — a task rules engines can't replicate",
+      "competitors": [
+        { "name": "TurboTax", "weakness": "Not AI-native; requires manual categorization; expensive at $89–$169/yr; no proactive deduction hunting" },
+        { "name": "FlyFin", "weakness": "Exists but poor UX, limited integrations, not focused on deduction maximization" },
+        { "name": "Keeper Tax", "weakness": "Subscription at $20/mo but shallow bank integration, no real AI reasoning on ambiguous expenses" }
+      ],
+      "gap": "No product proactively scans transactions and explains *why* each expense is deductible with IRS citations. Freelancers don't know what they're missing.",
+      "poc_steps": [
+        "Sign up for Plaid developer account (free sandbox, 1 day)",
+        "Write a Claude prompt that takes 20 transaction descriptions and classifies each as deductible/not + reason",
+        "Build a simple web form where user pastes their bank CSV and gets a deduction report",
+        "Post in r/freelance and r/personalfinance with a free tool link"
+      ],
+      "poc_difficulty": 2,
+      "time_to_first_revenue": "1–2 weeks",
+      "quick_profit_score": 9
+    },
+    {
+      "title": "AI SMB Invoice & Cash Flow Agent",
+      "niche": "Invoice & AR/AP Automation for SMBs",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Plaid + QuickBooks connected AI agent that auto-categorizes invoices, predicts cash flow gaps 30 days out, drafts payment reminder emails. Charge $49–$199/mo to SMBs with $1M–$10M revenue.",
+      "revenue_potential": "$8,000–$40,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 8,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 6.60,
+      "tier": "B",
+      "timeframe": "24/7 passive",
+      "moat": "Plaid data integration creates switching cost; accounting firm distribution creates B2B2B moat",
+      "first_step": "Sign up for Plaid developer + QuickBooks sandbox; build MVP cash flow forecasting dashboard in 1 weekend",
+      "ai_agent_angle": "LLM parses unstructured invoice PDFs, drafts collection emails, explains cash flow forecasts in plain language",
+      "competitors": [
+        { "name": "QuickBooks", "weakness": "Generic; no proactive cash flow AI; no automated AR follow-up; expensive at $35–$100/mo" },
+        { "name": "Bill.com", "weakness": "Enterprise-focused; $45/user/mo; no cash flow prediction; purely workflow, not intelligent" },
+        { "name": "Ramp / Brex", "weakness": "Spend management only, not AR/AP; requires their card; not applicable to most SMBs" }
+      ],
+      "gap": "No affordable tool proactively predicts cash flow crises and takes action (sends reminders, flags late payers) before the SMB runs out of money.",
+      "poc_steps": [
+        "Build a Google Sheets + Claude integration: paste invoice list, get cash flow forecast + top 3 follow-up actions",
+        "Demo to 3 SMB owners in your network",
+        "Build basic web UI with CSV upload",
+        "Post in SMB owner Facebook groups"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "1–3 weeks",
+      "quick_profit_score": 8
+    },
+    {
+      "title": "RegTech Compliance Brief Generator for Crypto",
+      "niche": "Regulatory Compliance Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Scrape SEC, CFTC, FinCEN, EU MiCA feeds daily. LLM summarizes impact per business type. Sell $299–$999/mo to crypto compliance teams who otherwise pay lawyers $500+/hr.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$200–$800",
+      "setup_time": "1–3 weeks",
+      "profitability_score": 8,
+      "risk_score": 4,
+      "effort_score": 5,
+      "risk_adjusted_score": 6.85,
+      "tier": "B",
+      "timeframe": "scheduled",
+      "moat": "Regulatory corpus grows over time creating proprietary RAG database; first-mover brand in vertical",
+      "first_step": "Set up RSS/webhook for SEC.gov, CFTC.gov; build LLM summarization pipeline; launch with 5 free beta users in crypto Telegram",
+      "ai_agent_angle": "AI monitors regulatory feeds 24/7, correlates new rules against client business model, flags material changes",
+      "competitors": [
+        { "name": "Lexology / Mondaq", "weakness": "Not crypto-specific; curated by humans; $2k–$10k/mo; not actionable" },
+        { "name": "ComplyAdvantage", "weakness": "AML/sanctions focused, not regulatory change tracking; enterprise pricing $500k+/yr" },
+        { "name": "None dominant", "weakness": "Crypto RegTech is fragmented; no clear winner for SMB crypto companies under 50 employees" }
+      ],
+      "gap": "Crypto companies need regulatory updates translated into 'what does this mean for MY business' — not generic legal summaries. No affordable tool does this.",
+      "poc_steps": [
+        "Set up free RSS feed monitoring for SEC.gov enforcement section (1 hour)",
+        "Write Claude prompt: 'summarize this SEC enforcement action and tell me if it affects a crypto exchange business'",
+        "Build email digest that sends daily summaries to 10 beta subscribers",
+        "Charge $99/mo after 2 weeks of free trial"
+      ],
+      "poc_difficulty": 2,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 8
+    },
+    {
+      "title": "AI Personal Finance Coach (Budget Automation)",
+      "niche": "Personal Finance Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Connect bank accounts via Plaid, analyze spending, send weekly personalized coaching messages with specific actions. Charge $9.99/mo.",
+      "revenue_potential": "$10,000–$80,000/mo",
+      "setup_cost": "$1,000–$3,000",
+      "setup_time": "4–6 weeks",
+      "profitability_score": 9,
+      "risk_score": 5,
+      "effort_score": 7,
+      "risk_adjusted_score": 6.30,
+      "tier": "B",
+      "timeframe": "scheduled",
+      "moat": "12+ months spending data creates deeply personalized experience; habit formation creates retention",
+      "first_step": "Build Plaid Link + categorization + LLM coaching prompt; launch on Product Hunt",
+      "ai_agent_angle": "LLM generates genuinely personalized advice instead of generic tips — the difference between Mint (failed) and something that changes behavior",
+      "competitors": [
+        { "name": "Mint (shut down 2023)", "weakness": "Shut down — proves demand but also proves generic budget tracking isn't enough" },
+        { "name": "YNAB", "weakness": "Requires manual effort; $14.99/mo; no AI; steep learning curve; high churn" },
+        { "name": "Copilot", "weakness": "iOS only; $13/mo; no proactive coaching, just visualization; US market focus" }
+      ],
+      "gap": "Mint proved people want this but gave up when the app showed pretty charts and did nothing actionable. AI coaching that tells you EXACTLY what to cancel and save is the missing piece.",
+      "poc_steps": [
+        "Build Plaid Link integration + basic categorization (1 weekend)",
+        "Write weekly coaching prompt that outputs 3 specific actions",
+        "Send email with actions to 20 beta users (friends/family)",
+        "Charge $9.99/mo after 4 weeks of feedback"
+      ],
+      "poc_difficulty": 4,
+      "time_to_first_revenue": "3–4 weeks",
+      "quick_profit_score": 7
+    }
+  ]
+}

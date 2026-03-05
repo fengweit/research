@@ -1,0 +1,105 @@
+{
+  "industry": "Advertising & AdTech",
+  "money_flow_summary": "Advertisers pay platforms and publishers CPM/CPC to reach audiences. AI has collapsed the cost of creative production and campaign management — solo operators can now run $1M+ ad budgets with automation.",
+  "opportunities": [
+    {
+      "title": "AI Creative Studio for Meta/TikTok Ads",
+      "niche": "AI Creative Generation & Testing",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Ingests brand product catalog + past ads, generates 50+ ad creative variants/week, auto-uploads to Meta/TikTok via API, monitors performance, kills underperformers. Charge $500–$2,000/mo to DTC brands.",
+      "revenue_potential": "$10,000–$60,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "3–5 weeks",
+      "profitability_score": 9,
+      "risk_score": 5,
+      "effort_score": 7,
+      "risk_adjusted_score": 6.30,
+      "tier": "B",
+      "timeframe": "scheduled",
+      "moat": "Performance data creates flywheel — more brands = better creative templates",
+      "first_step": "Connect Meta Marketing API + fal.ai for image gen; build 'generate 20 ad variants from product URL' demo",
+      "ai_agent_angle": "AI generates, tests, and iterates ad creative 10x faster than human designers",
+      "competitors": [
+        { "name": "AdCreative.ai", "weakness": "Generic templates; no auto-upload to ad platforms; no performance-based iteration; $21–$149/mo — too cheap to be useful" },
+        { "name": "Smartly.io", "weakness": "Enterprise only ($2k+/mo); no AI creative generation, just scheduling/automation" },
+        { "name": "Motion (app)", "weakness": "Analytics only, not generation; requires human creatives; $500–$1,000/mo" }
+      ],
+      "gap": "AdCreative.ai generates images but can't auto-upload to ad platforms or kill poor performers. The closed-loop system (generate → test → kill → iterate) doesn't exist affordably.",
+      "poc_steps": [
+        "Pick 1 DTC brand (can be yours or a friend's Shopify store)",
+        "Use fal.ai/Replicate to generate 10 product image variants (product photos with different backgrounds/copy)",
+        "Manually upload to Meta Ads Manager, set $5/day test budget",
+        "Show client which variants won after 3 days"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "1–2 weeks",
+      "quick_profit_score": 8
+    },
+    {
+      "title": "Google Ads Automation for Local Businesses (White-Label)",
+      "niche": "Local Business Ad Automation",
+      "mechanism": "Automation",
+      "how_money_is_made": "Auto-creates Google Ads campaigns from a business's Google Business Profile, generates keywords with LLM, writes ad copy, optimizes bids. Sell white-label to local marketing agencies at $99/seat.",
+      "revenue_potential": "$5,000–$30,000/mo",
+      "setup_cost": "$1,000–$3,000",
+      "setup_time": "4–6 weeks",
+      "profitability_score": 8,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 6.60,
+      "tier": "B",
+      "timeframe": "24/7 passive",
+      "moat": "White-label distribution through agencies creates 1:N leverage",
+      "first_step": "Build Google Ads API sandbox integration; create white-label agency demo",
+      "ai_agent_angle": "AI writes hyper-local ad copy and adjusts bids based on local competitor activity automatically",
+      "competitors": [
+        { "name": "WordStream", "weakness": "Not truly automated; still requires human management; $264–$528/mo; no AI copywriting" },
+        { "name": "LocaliQ (Gannett)", "weakness": "Traditional agency model with some automation; expensive; slow to set up" },
+        { "name": "Vendasta", "weakness": "Broad platform (not specialized); complex; expensive for small agencies" }
+      ],
+      "gap": "Local marketing agencies have 50–200 clients each but no affordable tool that actually auto-generates and auto-optimizes campaigns end-to-end. They need a robot they can resell.",
+      "poc_steps": [
+        "Register for Google Ads API access (1–2 days for approval)",
+        "Build script that creates 1 campaign from a business name + zip code",
+        "Add Claude to write the 3 headlines + 2 descriptions",
+        "Demo live to 1 local marketing agency owner"
+      ],
+      "poc_difficulty": 4,
+      "time_to_first_revenue": "2–3 weeks",
+      "quick_profit_score": 7
+    },
+    {
+      "title": "Ad Attribution & ROAS Clarity Tool",
+      "niche": "Ad Spend Analytics & Attribution",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Combines Shopify data, Meta CAPI events, GA4, and post-purchase surveys into a unified ROAS model. Uses statistical modeling to infer attribution where tracking breaks down. Sell to $500k–$10M/yr ecommerce brands at $199–$799/mo.",
+      "revenue_potential": "$8,000–$50,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "4–6 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 7,
+      "risk_adjusted_score": 6.75,
+      "tier": "B",
+      "timeframe": "24/7 passive",
+      "moat": "Historical attribution data creates switching cost; accuracy compounds",
+      "first_step": "Build Shopify + Meta CAPI + GA4 connector; create demo dashboard with fake data",
+      "ai_agent_angle": "AI infers probabilistic attribution where deterministic tracking fails — solving a $50B/yr problem",
+      "competitors": [
+        { "name": "Northbeam", "weakness": "$1,000+/mo minimum; only for $1M+ ad spend brands; complex setup; overkill for SMBs" },
+        { "name": "Triple Whale", "weakness": "Shopify-centric; $129–$649/mo; basic MTA; UI is overwhelming for small teams" },
+        { "name": "Rockerbox", "weakness": "Enterprise ($2k+/mo); not accessible for sub-$5M brands" }
+      ],
+      "gap": "Post-iOS14, every DTC brand has broken attribution. Existing tools either cost $1k+/mo (too expensive for small brands) or give oversimplified last-click data. The $100k–$1M ad spend brand is underserved.",
+      "poc_steps": [
+        "Build Shopify → Google Sheets integration pulling order + UTM data",
+        "Add post-purchase survey with 1 question ('How did you hear about us?')",
+        "Build simple dashboard showing survey vs reported channel breakdown",
+        "Charge $199/mo after showing 1 brand their attribution discrepancy"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 8
+    }
+  ]
+}

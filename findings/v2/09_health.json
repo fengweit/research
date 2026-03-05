@@ -1,0 +1,73 @@
+{
+  "industry": "Health & MedTech",
+  "money_flow_summary": "Money flows from patients → insurers → providers. Solo opportunity: health administration automation and wellness tools where AI delivers value without FDA approval.",
+  "opportunities": [
+    {
+      "title": "AI Medical Scribe for Private Practice",
+      "niche": "Medical Documentation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Ambient AI scribe listens to doctor-patient conversations, generates structured SOAP notes, exports to EHR. Charge $199–$499/mo per provider. Doctors spend 2+ hrs/day on documentation.",
+      "revenue_potential": "$10,000–$100,000/mo",
+      "setup_cost": "$1,000–$5,000",
+      "setup_time": "4–8 weeks",
+      "profitability_score": 10,
+      "risk_score": 5,
+      "effort_score": 7,
+      "risk_adjusted_score": 7.80,
+      "tier": "A",
+      "timeframe": "24/7 passive",
+      "moat": "EHR integration complexity; doctor workflow familiarity creates stickiness",
+      "first_step": "Mobile audio capture + Whisper + Claude SOAP note; integrate AthenaHealth API; get 5 beta doctors",
+      "ai_agent_angle": "AI listens to natural conversation and produces structured clinical documentation without doctor touching keyboard",
+      "competitors": [
+        { "name": "Suki AI", "weakness": "$249–$349/mo; limited EHR integrations; voice-command based not ambient; poor accuracy on specialty terms" },
+        { "name": "Nuance DAX (Microsoft)", "weakness": "Enterprise contracts; $500+/provider/mo; long implementation; requires IT department" },
+        { "name": "Freed AI", "weakness": "New entrant; basic note taking; no EHR push integration; limited formatting" }
+      ],
+      "gap": "Suki is $249/mo but requires the doctor to speak commands. A truly ambient scribe that listens passively and produces structured notes ready to push to Epic/AthenaHealth is missing at the SMB ($199/mo) price point.",
+      "poc_steps": [
+        "Build a simple iOS app that records audio",
+        "Send recording to Whisper API for transcription",
+        "Feed transcript to Claude with SOAP note prompt",
+        "Show a doctor friend the output — compare to what they'd write manually",
+        "Charge $199/mo if they'd use it"
+      ],
+      "poc_difficulty": 3,
+      "time_to_first_revenue": "1–2 weeks",
+      "quick_profit_score": 9
+    },
+    {
+      "title": "Prior Authorization AI Agent for Medical Practices",
+      "niche": "Prior Authorization Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "AI reads insurance requirements, gathers EHR documentation, fills PA forms, submits electronically, tracks status. Charge $299–$999/mo. A primary care practice spends $15k–$30k/yr on prior auth.",
+      "revenue_potential": "$8,000–$60,000/mo",
+      "setup_cost": "$1,000–$5,000",
+      "setup_time": "6–10 weeks",
+      "profitability_score": 9,
+      "risk_score": 5,
+      "effort_score": 8,
+      "risk_adjusted_score": 6.05,
+      "tier": "B",
+      "timeframe": "event-driven",
+      "moat": "Insurance plan requirement database grows over time; EHR integrations create high switching cost",
+      "first_step": "Build a scraper for CMS prior auth requirements; integrate with AthenaHealth patient data; demo with 1 practice doing 20+ PAs/week",
+      "ai_agent_angle": "AI reads unstructured insurance documents, matches to patient clinical data, fills complex forms autonomously",
+      "competitors": [
+        { "name": "Availity", "weakness": "Clearinghouse, not automation — still requires staff to fill forms; free but no AI" },
+        { "name": "Olive AI (shut down 2023)", "weakness": "Failed — proves this is hard but demand is real; enterprise only pricing was the problem" },
+        { "name": "Cohere Health", "weakness": "Enterprise only; $100k+/yr; requires insurance company integration" }
+      ],
+      "gap": "Olive AI failed because they targeted large health systems at $1M+ ACV. Solo/small practices (50k+ in the US) have the same pain and no affordable solution. $299–$999/mo for practice-level PA automation is completely unaddressed.",
+      "poc_steps": [
+        "Pick 1 insurance company's PA requirements for 1 common procedure (e.g., MRI)",
+        "Build form-fill bot using Playwright for the payer portal",
+        "Test with 5 real PA submissions from 1 practice (with consent)",
+        "Charge $299/mo if it works"
+      ],
+      "poc_difficulty": 6,
+      "time_to_first_revenue": "3–4 weeks",
+      "quick_profit_score": 6
+    }
+  ]
+}

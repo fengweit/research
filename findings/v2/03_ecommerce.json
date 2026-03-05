@@ -1,0 +1,105 @@
+{
+  "industry": "E-Commerce & Retail",
+  "money_flow_summary": "Money flows from consumers through checkout systems to merchants. Payment processors take 2–3%, marketplaces 8–15%, logistics 10–25% of GMV. Solo entrepreneurs arbitrage across layers using automation.",
+  "opportunities": [
+    {
+      "title": "AI Product Listing Optimizer (Amazon/Etsy)",
+      "niche": "Product Listing Optimization",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Pull seller listings via Amazon SP-API, rewrite titles/bullets/descriptions with top-performing keywords, A/B test variants. Charge $99–$499/mo based on catalog size.",
+      "revenue_potential": "$8,000–$60,000/mo",
+      "setup_cost": "$500–$1,500",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 5,
+      "risk_adjusted_score": 7.65,
+      "tier": "A",
+      "timeframe": "24/7 passive",
+      "moat": "Performance data shows clear ROI; strong retention once listings convert better",
+      "first_step": "Apply for Amazon SP-API; build single-ASIN demo; post before/after in r/FulfillmentByAmazon",
+      "ai_agent_angle": "LLM writes Amazon-native copy that embeds high-volume search terms naturally — outperforming human copywriters who don't know A9",
+      "competitors": [
+        { "name": "Helium 10 Listing Builder", "weakness": "Keyword research tool, not AI copy generator; $99–$249/mo just for the suite; generic templates" },
+        { "name": "Jungle Scout Listing Builder", "weakness": "Manual process; no auto-upload; keyword suggestions only, no generated copy" },
+        { "name": "Perpetua", "weakness": "Advertising automation only; no listing copy optimization" }
+      ],
+      "gap": "Helium 10 and Jungle Scout show you keywords but still require you to write the copy yourself. Zero tools auto-generate, auto-test, and auto-update listing copy based on conversion data.",
+      "poc_steps": [
+        "Pick 3 Amazon products in the same category",
+        "Use Claude to rewrite their listing titles with the top-5 keywords from Helium 10 free tier",
+        "Show seller the before vs. after copy side by side",
+        "Offer 'I'll optimize 3 listings for $99' as manual service first to validate demand"
+      ],
+      "poc_difficulty": 1,
+      "time_to_first_revenue": "3 days",
+      "quick_profit_score": 10
+    },
+    {
+      "title": "Shopify AI Customer Retention Suite",
+      "niche": "DTC Customer Retention",
+      "mechanism": "Subscription",
+      "how_money_is_made": "AI analyzes purchase history, predicts churn, auto-triggers personalized win-back emails/SMS with dynamic product recommendations. Charge $199–$999/mo.",
+      "revenue_potential": "$10,000–$80,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "3–5 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 7.25,
+      "tier": "A",
+      "timeframe": "scheduled",
+      "moat": "12+ months purchase data creates accurate churn model; Shopify App Store distribution",
+      "first_step": "Build Shopify OAuth app; connect Klaviyo API for email; create churn prediction model",
+      "ai_agent_angle": "AI generates hyper-personalized win-back messages referencing specific past purchases",
+      "competitors": [
+        { "name": "Klaviyo", "weakness": "Email platform, not AI retention; requires manual flows setup; $150–$800/mo; no churn prediction" },
+        { "name": "Postscript", "weakness": "SMS only; no AI personalization; no predictive churn scoring" },
+        { "name": "Retention.com", "weakness": "Only identifies abandoners; no personalized messaging; enterprise pricing" }
+      ],
+      "gap": "Klaviyo sends emails but doesn't tell you WHO is about to churn before they do. The predictive layer + auto-personalized outreach in one product is the gap.",
+      "poc_steps": [
+        "Export a Shopify store's customer data (with permission)",
+        "Build simple RFM (Recency/Frequency/Monetary) churn score in Python/spreadsheet",
+        "Generate 3 personalized win-back email templates with Claude for top-at-risk customers",
+        "Show brand owner: 'here are 47 customers about to churn and their personalized emails'"
+      ],
+      "poc_difficulty": 2,
+      "time_to_first_revenue": "1 week",
+      "quick_profit_score": 9
+    },
+    {
+      "title": "Amazon/Liquidation Return Pallet Arbitrage Tracker",
+      "niche": "Returns & Liquidation Arbitrage",
+      "mechanism": "Arbitrage",
+      "how_money_is_made": "Monitor BULQ, Direct Liquidation, B-Stock for pallet manifests. LLM reads manifests, estimates resale value vs eBay sold listings, calculates margin. Use for yourself or sell as $49/mo SaaS.",
+      "revenue_potential": "$3,000–$15,000/mo",
+      "setup_cost": "$200–$1,000",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 7,
+      "risk_score": 5,
+      "effort_score": 5,
+      "risk_adjusted_score": 5.50,
+      "tier": "C",
+      "timeframe": "event-driven",
+      "moat": "eBay sold listing database creates proprietary pricing model over time",
+      "first_step": "Scrape eBay completed listings for 100 common liquidation categories; build manifest parser with LLM; test with 1 real pallet",
+      "ai_agent_angle": "AI reads messy manifest data and maps to accurate market values — 3+ hours work done in seconds",
+      "competitors": [
+        { "name": "BULQ (built-in valuation)", "weakness": "Only shows BULQ listings, not cross-marketplace; basic valuation; no margin calculator" },
+        { "name": "Liquidation.com", "weakness": "Raw auction platform; no intelligence layer; no profitability prediction" },
+        { "name": "None", "weakness": "No dedicated tool exists for automated pallet valuation across all liquidation platforms" }
+      ],
+      "gap": "Liquidation resellers spend hours manually researching manifest items. A tool that auto-calculates expected profit before they bid doesn't exist.",
+      "poc_steps": [
+        "Find 1 BULQ manifest with 20+ items",
+        "Search each item on eBay manually, record sold prices",
+        "Build a spreadsheet template that calculates ROI",
+        "Automate with eBay API + Claude manifest parser"
+      ],
+      "poc_difficulty": 2,
+      "time_to_first_revenue": "1 week",
+      "quick_profit_score": 7
+    }
+  ]
+}

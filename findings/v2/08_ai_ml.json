@@ -1,0 +1,99 @@
+{
+  "industry": "AI & Machine Learning",
+  "money_flow_summary": "Enterprises and developers pay AI platform providers via API usage. Solo operators sit in the middle: building AI-powered products that capture value between commodity APIs and business users.",
+  "opportunities": [
+    {
+      "title": "AI Voice Agent for Inbound SMB Calls (Listed in SaaS — primary entry point)",
+      "niche": "Voice AI & Conversational Agents",
+      "mechanism": "Subscription",
+      "how_money_is_made": "See SaaS industry entry — this is the #1 opportunity across all 28 industries.",
+      "revenue_potential": "$10,000–$100,000/mo",
+      "setup_cost": "$500–$3,000",
+      "setup_time": "2–4 weeks",
+      "profitability_score": 10,
+      "risk_score": 4,
+      "effort_score": 6,
+      "risk_adjusted_score": 8.60,
+      "tier": "S",
+      "timeframe": "24/7 passive",
+      "moat": "Vertical-specific knowledge + phone system integration",
+      "first_step": "Vapi free account → dental booking agent → demo in 1 day",
+      "ai_agent_angle": "AI IS the product — voice agent replaces human receptionist at 1/10 the cost",
+      "competitors": [
+        { "name": "Ruby / Smith.ai", "weakness": "Human-powered; $250–$1,000+/mo; limited hours; can't scale to 100 simultaneous calls" }
+      ],
+      "gap": "Fully automated voice AI for specific verticals at SMB pricing ($199–$999/mo) vs. human services at $500–$2,000/mo",
+      "poc_steps": ["Create Vapi account", "Build dental booking agent with Google Calendar", "Demo to 5 offices"],
+      "poc_difficulty": 2,
+      "time_to_first_revenue": "3–5 days",
+      "quick_profit_score": 10
+    },
+    {
+      "title": "AI QA Testing Agent for Web & Mobile Apps",
+      "niche": "AI-Powered Testing & QA Automation",
+      "mechanism": "Subscription",
+      "how_money_is_made": "AI agent explores app autonomously like a QA tester, identifies bugs, generates structured bug reports with screenshots and reproduction steps. Charge dev teams $99–$499/mo. Replaces 1–2 days of manual QA per sprint.",
+      "revenue_potential": "$5,000–$40,000/mo",
+      "setup_cost": "$500–$2,000",
+      "setup_time": "3–6 weeks",
+      "profitability_score": 9,
+      "risk_score": 4,
+      "effort_score": 7,
+      "risk_adjusted_score": 7.00,
+      "tier": "A",
+      "timeframe": "event-driven",
+      "moat": "CI/CD integration creates workflow dependency; test history database compounds",
+      "first_step": "Build Playwright-based AI agent using Claude's computer use API; test on 5 open-source apps; post demo video on Twitter/X",
+      "ai_agent_angle": "AI explores the UI like a human tester — clicking flows, testing edge cases, finding usability bugs",
+      "competitors": [
+        { "name": "Playwright / Selenium", "weakness": "Requires humans to write test scripts; not autonomous; breaks on UI changes; no bug reporting" },
+        { "name": "Testim", "weakness": "$450+/mo; still requires test case definition; not truly autonomous exploration" },
+        { "name": "Mabl", "weakness": "Enterprise ($600+/mo); requires setup; not truly autonomous; focused on regression" }
+      ],
+      "gap": "Existing QA tools need humans to define test scripts. An AI that autonomously explores an app and finds bugs without predefined test cases — like a human exploratory QA tester — doesn't exist at affordable prices.",
+      "poc_steps": [
+        "Install Playwright and Claude API",
+        "Write agent that opens a URL and clicks through 20 random UI elements",
+        "Log any errors, slow loads, or broken flows",
+        "Show 1 dev team: 'here are 8 bugs your QA team missed'"
+      ],
+      "poc_difficulty": 4,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 7
+    },
+    {
+      "title": "Computer Vision Inventory Counter for Restaurants/Retail",
+      "niche": "Computer Vision for Industrial/Retail",
+      "mechanism": "Subscription",
+      "how_money_is_made": "Employee walks storeroom with phone, takes 30-sec video, AI counts every item, compares to par levels, generates purchase order. Charge $149–$499/mo. Targets 1M+ restaurants and 3M+ small retailers.",
+      "revenue_potential": "$5,000–$40,000/mo",
+      "setup_cost": "$500–$3,000",
+      "setup_time": "4–8 weeks",
+      "profitability_score": 8,
+      "risk_score": 5,
+      "effort_score": 7,
+      "risk_adjusted_score": 5.70,
+      "tier": "C",
+      "timeframe": "scheduled",
+      "moat": "Custom product catalog per business creates switching cost; accuracy improves with more training data",
+      "first_step": "Build mobile video capture + YOLO/Vision API item counting; test with 1 local restaurant; produce ROI calculator",
+      "ai_agent_angle": "AI recognizes thousands of products from video in seconds — replacing 2+ hours of manual counting",
+      "competitors": [
+        { "name": "Crunchtime (restaurant inventory)", "weakness": "Enterprise ($1k+/mo); manual counting still required; just a system of record, not automation" },
+        { "name": "BlueCart", "weakness": "Ordering platform; no computer vision; requires manual count entry" },
+        { "name": "None at SMB price point", "weakness": "CV inventory counting for restaurants doesn't exist affordably" }
+      ],
+      "gap": "No affordable mobile tool auto-counts restaurant inventory from video. Manual inventory takes 2–4 hours/week per location. This is a solved technical problem (YOLO/Vision API) that no SMB-priced product has deployed.",
+      "poc_steps": [
+        "Use Google Vision API or Roboflow to detect objects in a photo",
+        "Go to a friend's restaurant/bar, photograph the beer walk-in",
+        "Show: 'AI counted 47 Modelo, 23 Corona, 15 Blue Moon'",
+        "Compare to their physical count",
+        "Charge $149/mo if accuracy is >90%"
+      ],
+      "poc_difficulty": 4,
+      "time_to_first_revenue": "2 weeks",
+      "quick_profit_score": 6
+    }
+  ]
+}
